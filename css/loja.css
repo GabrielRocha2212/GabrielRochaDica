@@ -1,0 +1,52 @@
+*{
+    background-color: blueviolet;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    background-color:azure;
+}
+
+header{
+    background-color: aquamarine;
+    color: bisque;
+    text-align: center;
+    padding: 15px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card{
+    background-color: blue;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid brown;
+    width: 200px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 120px;
+    background-color: aqua;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer
+    margin-top: 10px;
+
+}
+
+button:hover{
+    background-color: darkgreen;
+}

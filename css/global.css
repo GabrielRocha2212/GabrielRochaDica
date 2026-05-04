@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: blueviolet;
+        color: black;      
+
+
+    }
+
+    .caixa{
+        background-color: blue;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0,2)
+    }
+    
+    .grupo-input{
+            margin-bottom: 15px;
+    }
+    
+    .grupo-input{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .grupo-input{
+        display: block;
+        margin-bottom: 5px;
+        border: 1px; color: aquamarine;
+    }
+
+    .grupo-input :focus{
+        display: block;
+        border: 5px;
+    }
+
+.grupo-input{
+    border-color: green;
+}
+
+
+
+
+    
