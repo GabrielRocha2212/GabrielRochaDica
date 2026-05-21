@@ -4,39 +4,87 @@
     box-sizing: border-box;
 }
 
+body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: blue;
-    color: black;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #00d9ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .caixa{
-    background-color: azure;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0, 10px 25px rgba(0,0,0,0,2);
+    background: rgba(15, 23, 42, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+
+    border: 2px solid #00d9ff;
+
+    box-shadow:
+        0 0 15px #00d9ff,
+        0 0 40px rgba(0,217,255,0.3);
+
+    backdrop-filter: blur(10px);
+
+    width: 350px;
 }
 
-.grupo input{
-    margin-bottom: 15px;
-}
 
 .grupo input{
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+
+    border-radius: 8px;
+    border: 1px solid #00d9ff;
+
+    background: #0f172a;
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s;
 }
 
-.grupo input{
-    display: block;
-    margin-bottom: 5px;
-    border: 1px; color: black;
+
+input {
+  width: 100%; 
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc; 
+  border-radius: 8px;   
+  box-sizing: border-box;
+  outline: none;       
+  transition: 0.3s;      
+  background-color: #f9f9f9;
 }
 
-.grupo input :focus{
-    display: block;
-    border: 5px;
+
+input:focus {
+  border-color: #00d1ff;
+ 
 }
+
 
 .grupo input{
     border-color: black; 
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+
+    background: #00d9ff;
+    color: #000;
+
+    border: none;
+    border-radius: 10px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
 }
     

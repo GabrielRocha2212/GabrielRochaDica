@@ -1,170 +1,210 @@
-/* Reset básico */
+/* =========================
+   RESET
+========================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 
-/* Fundo da página */
+/* =========================
+   BODY
+========================= */
 
 body {
-    height: 100vh;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
+    min-height: 100vh;
 }
 
 
-/* Container principal */
+/* =========================
+   NAVBAR
+========================= */
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    padding: 30px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-}
-
-
-/* Cabeçalho */
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-}
-
-header p {
-    opacity: 0.7;
-}
-
-
-/* Cards */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* corrigido */
-    gap: 20px;
-}
-
-
-/* Card individual */
-
-.card {
-    padding: 20px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.08);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* Efeito brilho no hover */
-
-.card::before {
-    content: "";
-    position: absolute;
+.navbar {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    top: 0;
-    left: -100%;
-    transition: 0.5s;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
-.card:hover::before {
-    left: 100%;
-}
-
-
-/* Hover do card */
-
-.card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-}
-
-.card h2 {
-    margin-bottom: 10px;
-}
-
-.card p {
-    opacity: 0.7;
+.logo-img {
+    width: 120px;
 }
 
 
-/* Botão */
+/* =========================
+   MENU
+========================= */
 
-.btn {
-    display: block;
-    margin: 40px auto 0;
-    padding: 15px 30px;
-    border-radius: 50px;
-    border: 2px solid #00f2ff;
-    background: transparent;
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
     color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f2ff;
 }
 
 
-/* Hover do botão */
+/* =========================
+   PESQUISA
+========================= */
 
-.btn:hover {
+.search-container form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+
     background: #00f2ff;
     color: black;
-    box-shadow: 0 0 20px #00f2ff;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
     transform: scale(1.05);
 }
 
 
-/* Rodapé */
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.main-title {
+    margin-bottom: 30px;
+    color: #00f2ff;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.content-section {
+    margin-bottom: 50px;
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   GRID DOS CARDS
+========================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    transition: 0.3s;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    border: 1px solid #00f2ff;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+
+/* =========================
+   IMAGEM DO CARD
+========================= */
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     text-align: center;
-    margin-top: 30px;
-    opacity: 0.6;
-    font-size: 0.9rem;
+    padding: 20px;
+    opacity: 0.7;
 }
 
-.nav-links{
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
 
-    background-color: aliceblue;
-    
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-}
-
-li a {
-  display: block;
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-/* Change the link and background color on hover */
-li a:hover {
-  background-color: #555555;
-  color: white;
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
