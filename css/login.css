@@ -1,90 +1,103 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #00d9ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
 
+
+.navbar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+/* Centralização do formulário */
+.centralizar-tela {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.caixa{
+.caixa {
     background: rgba(15, 23, 42, 0.85);
     padding: 30px;
     border-radius: 15px;
-
     border: 2px solid #00d9ff;
-
-    box-shadow:
-        0 0 15px #00d9ff,
-        0 0 40px rgba(0,217,255,0.3);
-
+    box-shadow: 0 0 15px #00d9ff, 0 0 40px rgba(0, 217, 255, 0.3);
     backdrop-filter: blur(10px);
-
     width: 350px;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
 
-.grupo input{
+.grupo-input {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.grupo-input input {
     width: 100%;
     padding: 12px;
-
     border-radius: 8px;
     border: 1px solid #00d9ff;
-
     background: #0f172a;
     color: white;
-
     outline: none;
-
     transition: 0.3s;
 }
 
-
-input {
-  width: 100%; 
-  padding: 12px 15px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc; 
-  border-radius: 8px;   
-  box-sizing: border-box;
-  outline: none;       
-  transition: 0.3s;      
-  background-color: #f9f9f9;
+.grupo-input input:focus {
+    box-shadow: 0 0 10px #00d9ff;
+    border-color: #fff;
 }
 
-
-input:focus {
-  border-color: #00d1ff;
- 
-}
-
-
-.grupo input{
-    border-color: black; 
-}
-
-button{
+button {
     width: 100%;
     padding: 12px;
-
     background: #00d9ff;
     color: #000;
-
     border: none;
     border-radius: 10px;
-
     font-weight: bold;
     cursor: pointer;
-
     transition: 0.3s;
+    margin-top: 10px;
 }
-    
+
+button:hover {
+    background: #00b8d9;
+    box-shadow: 0 0 20px #00d9ff;
+    transform: translateY(-2px);
+}

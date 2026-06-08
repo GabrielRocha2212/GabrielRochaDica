@@ -14,16 +14,59 @@ body{
     align-items: center;
 
     color: white;
-    padding: 30px;
+    padding-top: 100px;
 }
 
+.navbar {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 2px solid #00f2ff;
+}
+
+.logo-img {
+    height: 50px; 
+    transition: 0.3s;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.nav-links li a:hover {
+    color: #00f2ff;
+    text-shadow: 0 0 10px #00f2ff;
+}
+
+
 .container{
-    width: 90%;
+    width: 90%; 
     max-width: 1200px;
 
-    padding: 30px;
+    padding: 30px; 
 
-    border-radius: 20px;
+    border-radius: 20px; 
 
     background: rgba(255,255,255,0.05);
 
@@ -156,4 +199,61 @@ header p{
     transform: scale(1.05);
 
     box-shadow: 0 0 15px #00f2ff;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 0.8rem;
+    }
+}
+
+.carrinho{
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.carrinho h2{
+    margin-bottom: 15px;
+}
+
+.carrinho ul{
+    list-style: none;
+    padding: 0;
+}
+
+.carrinho ul{
+    list-style: none;
+    padding: 0;
+}
+
+.carrinho button{
+    background: #00c853;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrinho button{
+    background: #00c853;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }

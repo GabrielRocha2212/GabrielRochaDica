@@ -134,11 +134,11 @@
                 </div>
                  
                 <div class="card">
-                    <img src="../img/pokemon za.jpg" alt="Pokemon za">
+                    <img src="../img/jojo.jpg" alt="jojo's bizarre adventure all star battle remaster">
 
-                    <h3>Pokemon za</h3>
+                    <h3>jojo's bizarre adventure all star battle remaster</h3>
 
-                    <p>R$ 540,00</p>
+                    <p>R$ 380,00</p>
 
                     <button>Comprar</button>
                 </div>
@@ -334,6 +334,211 @@
 
                     <button>Comprar</button>
                 </div>
+
+                  <div class="card">
+                    <img src="../img/lords of mysteries.jpg" alt="Lords of Mysteries">
+
+                    <h3>Lords of Mysteries</h3>
+
+                    <p>R$ 520,90</p>
+
+                    <button>Comprar</button>
+                </div>
+
+                  <div class="card">
+                    <img src="../img/subnautica below zero.jpg" alt="subnautica below zero">
+
+                    <h3>subnautica below zero</h3>
+
+                    <p>R$ 290,90</p>
+
+                    <button>Comprar</button>
+                </div>
+
+                  <div class="card">
+                    <img src="../img/deathloop.jpg" alt="deathloop">
+
+                    <h3>Deathloop</h3>
+
+                    <p>R$ 70,00</p>
+
+                    <button>Comprar</button>
+                </div>
+
+                 <div class="card">
+                    <img src="../img/blasphemous.jpg" alt="blasphemous">
+
+                    <h3>blasphemous</h3>
+
+                    <p>R$ 240,90</p>
+
+                    <button>Comprar</button>
+                </div>
+
+                 <div class="card">
+                    <img src="../img/Blasphemous 2.jpg" alt="blasphemous 2">
+
+                    <h3>blasphemous 2</h3>
+
+                    <p>R$ 255,99</p>
+
+                    <button>Comprar</button>
+                </div>
+
+                 <div class="card">
+                    <img src="../img/bloodborne.jpg" alt="bloodborne">
+
+                    <h3>bloodborne</h3>
+
+                    <p>R$ 130,99</p>
+
+                    <button>Comprar</button>
+                </div>
+
+                 <div class="card">
+                    <img src="../img/007.jpg" alt="007 First Light">
+
+                    <h3>007 First Light</h3>
+
+                    <p>R$ 384,90</p>
+
+                    <button>Comprar</button>
+                </div>
+
+
+                <section class="carrinho">
+    <h2>🛒 Carrinho</h2>
+
+    <ul id="lista-carrinho"></ul>
+
+    <h3>Total: R$ <span id="total">1000,00</span></h3>
+
+    <button onclick="finalizarCompra()">
+        Finalizar Compra
+    </button>
+
+    <script>
+
+let carrinho = [];
+let total = 0;
+
+function adicionarCarrinho(nome, preco){
+
+    carrinho.push({
+        nome: nome,
+        preco: preco
+    });
+
+    total += preco;
+
+    atualizarCarrinho();
+}
+
+function atualizarCarrinho(){
+
+    const lista = document.getElementById("lista-carrinho");
+
+    lista.innerHTML = "";
+
+    carrinho.forEach(produto => {
+
+        let item = document.createElement("li");
+
+        item.textContent =
+            produto.nome + " - R$ " + produto.preco.toFixed(2);
+
+        lista.appendChild(item);
+
+    });
+
+    document.getElementById("total").textContent =
+        total.toFixed(2);
+}
+
+function finalizarCompra(){
+
+    if(carrinho.length === 0){
+        alert("Seu carrinho está vazio!");
+        return;
+    }
+
+    alert(
+        "Compra realizada!\nTotal: R$ " +
+        total.toFixed(2)
+    );
+
+    carrinho = [];
+    total = 0;
+
+    atualizarCarrinho();
+}
+
+</script>
+
+    
+</section>
+<div class="card">
+    <img src="../img/cod bo II.jpg" alt="COD Black Ops II">
+
+    <h3>COD Black Ops II</h3>
+
+    <p>R$ 80,99</p>
+
+    <button onclick="adicionarCarrinho('COD Black Ops II', 80.99)">
+        Comprar
+    </button>
+</div>
+
+<div class="card">
+    <img src="../img/cod bo II.jpg" alt="COD Black Ops II">
+
+    <h3>COD Black Ops II</h3>
+
+    <p>R$ 80,99</p>
+
+    <button onclick="adicionarCarrinho('COD Black Ops II', 80.99)">
+        Comprar
+    </button>
+</div>
+
+<div class="card">
+    <img src="../img/cod bo II.jpg" alt="COD Black Ops II">
+
+    <h3>COD Black Ops II</h3>
+
+    <p>R$ 80,99</p>
+
+    <button onclick="adicionarCarrinho('COD Black Ops II', 80.99)">
+        Comprar
+    </button>
+</div>
+
+<div class="card">
+    <img src="../img/cod bo II.jpg" alt="COD Black Ops II">
+
+    <h3>COD Black Ops II</h3>
+
+    <p>R$ 80,99</p>
+
+    <button onclick="adicionarCarrinho('COD Black Ops II', 80.99)">
+        Comprar
+    </button>
+</div>
+
+<div class="card">
+    <img src="../img/cod bo II.jpg" alt="COD Black Ops II">
+
+    <h3>COD Black Ops II</h3>
+
+    <p>R$ 80,99</p>
+
+    <button onclick="adicionarCarrinho('COD Black Ops II', 80.99)">
+        Comprar
+    </button>
+</div>
+
+
+
 
             
 
