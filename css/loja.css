@@ -9,70 +9,48 @@ body{
     min-height: 100vh;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     color: white;
-    padding-top: 100px;
+    padding-top: 90px;
 }
-
 .navbar {
     width: 100%;
-    position: fixed; 
-    top: 0;
-    left: 0;
+    padding: 20px 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-    background: rgba(0, 0, 0, 0.8); 
+
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-    z-index: 1000;
-    border-bottom: 2px solid #00f2ff;
 }
 
 .logo-img {
-    height: 50px; 
-    transition: 0.3s;
+    width: 120px;
 }
 
+
+/* =========================
+   MENU
+========================= */
 
 .nav-links {
     display: flex;
+    gap: 20px;
     list-style: none;
-    gap: 25px;
 }
 
-.nav-links li a {
-    text-decoration: none;
+.nav-links a {
     color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
+    text-decoration: none;
     transition: 0.3s;
-    letter-spacing: 1px;
 }
 
-.nav-links li a:hover {
+.nav-links a:hover {
     color: #00f2ff;
-    text-shadow: 0 0 10px #00f2ff;
 }
-
 
 .container{
-    width: 90%; 
-    max-width: 1200px;
-
-    padding: 30px; 
-
-    border-radius: 20px; 
-
-    background: rgba(255,255,255,0.05);
-
-    backdrop-filter: blur(15px);
-
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    margin: 0 auto;
 }
 
 header{
@@ -228,11 +206,6 @@ header p{
 
 .carrinho h2{
     margin-bottom: 15px;
-}
-
-.carrinho ul{
-    list-style: none;
-    padding: 0;
 }
 
 .carrinho ul{

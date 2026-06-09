@@ -30,11 +30,9 @@ position: fixed;
     z-index: 1000;
 }
 
+
 .logo-img {
-height: 60px;      
-    width: auto;     
-    display: block;   
-    transition: 0.3s;  
+    width: 120px;
 }
 
 .nav-links {

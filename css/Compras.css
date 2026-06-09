@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);;
+    color: white;
+}
+
+header{
+    background: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00bfff;
+}
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.logo-img {
+    width: 120px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f2ff;
+}
+.compras-container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.compra{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.compra:hover{
+    transform: scale(1.02);
+}
+
+.compra img{
+    width: 120px;
+    border-radius: 8px;
+}
+
+.info h2{
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.info p{
+    margin-bottom: 5px;
+}
