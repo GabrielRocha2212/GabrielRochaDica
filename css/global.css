@@ -44,6 +44,36 @@
 }
 
 
+@media (max-width: 768px){
+
+    .caixa{
+        max-width: 90%;
+        padding: 18px;
+    }
+
+}
+
+
+
+@media (max-width: 480px){
+
+    body{
+        padding: 15px;
+    }
+
+    .caixa{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .grupo-input input{
+        padding: 12px;
+        font-size: 16px;
+    }
+
+}
+
+
 
 
     

@@ -35,10 +35,7 @@ body {
 
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-}
 
-.logo-img {
-    width: 120px;
 }
 
 
@@ -196,15 +193,147 @@ footer {
     opacity: 0.7;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    position: relative;
+}
+
+.logo{
+    color: #00ffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+a {
+    color: #ffffff; /* Cor branca para o link */
+    text-decoration: none; /* Opcional: remove o sublinhado se preferir */
+}
+
+
+a:visited {
+    color: #e0e0e0; 
+}
+
+
+a:hover {
+    color: #9d4edd; 
+
+}
+
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Celulares */
+@media (max-width:768px){
+
+    .navbar{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:15px;
     }
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
+    .menu{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+        gap:15px;
     }
+
+    .pesquisa{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .pesquisa input{
+        width:75%;
+    }
+
+    .pesquisa button{
+        width:25%;
+    }
+
+    .container{
+        width:95%;
+        padding:20px;
+    }
+
+    .destaques,
+    .novidades,
+    .mais-vistos{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .card img{
+        width:100%;
+        height:auto;
+    }
+
+    h1{
+        font-size:35px;
+        text-align:center;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
 }
+
+
+@media (max-width:480px){
+
+    .container{
+        padding:15px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    .pesquisa{
+        flex-direction:column;
+    }
+
+    .pesquisa input,
+    .pesquisa button{
+        width:100%;
+    }
+
+}
+
+
