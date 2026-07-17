@@ -16,42 +16,34 @@ header{
     text-align: center;
     border-bottom: 2px solid #00bfff;
 }
-.navbar {
-    width: 100%;
-    padding: 20px 40px;
-
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    padding: 20px;
+    background: #111;
+    position: relative;
 }
 
-.logo-img {
-    width: 120px;
+.logo{
+    color: #00ffff;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-
-/* =========================
-   MENU
-========================= */
-
-.nav-links {
+.menu{
     display: flex;
-    gap: 20px;
     list-style: none;
+    gap: 30px;
 }
 
-.nav-links a {
+.menu a{
     color: white;
     text-decoration: none;
-    transition: 0.3s;
+    font-size: 18px;
+    
 }
 
-.nav-links a:hover {
-    color: #00f2ff;
-}
 .compras-container{
     width: 90%;
     max-width: 1000px;
